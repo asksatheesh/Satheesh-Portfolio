@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add spacing so content is not hidden under navbar */
+main {
+    padding-top: 80px; /* adjust to navbar height */
+}
+
+#section-nav ul {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  margin-bottom: 200px; /* 👈 Space below navbar */
+}
+
+#section-nav .nav-link {
+    cursor: pointer;
+}
+	
+/* Hero description max-width */
+.hero-description {
+    max-width: 600px;
+}
+
+/* Work Experience Cards */
+.card-body .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-body .badge {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+}
+
+.card-body h6 {
+    font-size: 0.9rem;
+}
+
+.card-body ul li {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+
