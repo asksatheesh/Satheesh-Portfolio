@@ -4,7 +4,7 @@ html {
 
 /* Add spacing so content is not hidden under navbar */
 main {
-    padding-top: 80px; /* adjust to navbar height */
+    padding-top: 30px; /* 👈 adjust to navbar height */
 }
 
 #section-nav ul {
@@ -14,10 +14,26 @@ main {
   transform: translateX(-50%);
   background: white;
   width: fit-content;
-  padding: 10px 20px;
   border-radius: 10px;
-  z-index: 1000;
-  margin-bottom: 200px; /* 👈 Space below navbar */
+    gap: 1px;
+  z-index: 1;
+}
+
+#section-nav ul {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 10px;
+  z-index: 1;
+  display: inline-flex;
+  padding: 5px 10px;
+}
+
+#section-nav ul li a {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
 }
 
 #section-nav .nav-link {
@@ -27,6 +43,43 @@ main {
 /* Hero description max-width */
 .hero-description {
     max-width: 600px;
+}
+
+/* bullet-icon size for list*/
+.bullet-icon-size{
+  font-size: 0.4rem;
+}
+
+#techSkill .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08); /* subtle border */
+  border-radius: 12px; /* rounded corners */
+  background-color: #fff;
+}
+
+#techSkill .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f8faff;
+  border-color: rgba(13, 110, 253, 0.5); /* highlight border on hover (bootstrap primary) */
+  cursor: pointer;
+}
+
+/* provisioning-box Hover Effect */
+.provisioning-box {
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: #f8f9fa;
+}
+
+.provisioning-box:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-color: rgba(13, 110, 253, 0.5);
+  cursor: pointer;
 }
 
 /* Work Experience Cards */
@@ -49,4 +102,105 @@ main {
     margin-bottom: 0.25rem;
 }
 
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* space between icon and text */
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  border: none;
+  border-radius: 10px; /* pill-shaped */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-contact::after {
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.btn-contact i {
+  transition: transform 0.3s ease;
+}
+
+.btn-contact:hover {
+  background: linear-gradient(90deg, #7c3aed 0%, #2563eb 100%); /* reversed gradient */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.btn-contact:hover i {
+  transform: rotate(-15deg); /* fun little icon animation */
+}
+
+.btn-contact:hover::after {
+  opacity: 1; /* show glowing effect */
+}
+
+
+
+
+/* Base styling for all social links */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  color: #212529; /* default text-dark */
+  text-decoration: none;
+}
+
+/* Gmail - Red */
+.social-link.gmail:hover {
+  border-color: #d14836; /* Gmail red */
+  color: #d14836;
+}
+
+/* LinkedIn - Blue */
+.social-link.linkedin:hover {
+  border-color: #0a66c2; /* LinkedIn blue */
+  color: #0a66c2;
+}
+
+/* WhatsApp - Green */
+.social-link.whatsapp:hover {
+  border-color: #25d366; /* WhatsApp green */
+  color: #25d366;
+}
+
+/* GitHub - Dark Gray/Black */
+.social-link.github:hover {
+  border-color: #333; /* GitHub dark */
+  color: #333;
+}
+
+
+/* Make sure this comes after Bootstrap CSS */
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  color: #212529;
+  text-decoration: none;
+}
+
+.location-link:hover {
+  color: #ff0000 !important; /* force red on hover */
+  cursor: pointer;
+}
 
