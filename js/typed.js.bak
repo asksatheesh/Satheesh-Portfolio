@@ -19,32 +19,28 @@ document.querySelectorAll('#section-nav .nav-link').forEach(link => {
 
 document.addEventListener("scroll", function () {
   const sections = document.querySelectorAll("section[id]");
-  const scrollPos = window.scrollY + window.innerHeight / 4; // detect section earlier
-  let currentActive = null;
+  const scrollPos = window.scrollY + window.innerHeight / 4; // trigger earlier
+  
+  let activeFound = false;
 
-  sections.forEach((section) => {
+  sections.forEach((section, index) => {
     const top = section.offsetTop;
     const bottom = top + section.offsetHeight;
+    const link = document.querySelector(`#section-nav .nav-link[href="#${section.id}"]`);
+
     if (scrollPos >= top && scrollPos < bottom) {
-      currentActive = section.id;
+      link?.classList.add("active");
+      activeFound = true;
+    } else {
+      link?.classList.remove("active");
     }
   });
 
-  // Clear all actives first
-  document.querySelectorAll('#section-nav .nav-link').forEach(link => {
-    link.classList.remove('active');
-  });
-
-  // Add active only to current section
-  if (currentActive) {
-    const activeLink = document.querySelector(`#section-nav .nav-link[href="#${currentActive}"]`);
-    activeLink?.classList.add('active');
-  }
-
-  // Special handling for last section (Contact)
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 5) {
-    document.querySelector(`#section-nav .nav-link[href="#contact"]`)?.classList.add('active');
+  // Force last section (contact) active when scrolled to bottom
+  if (!activeFound && window.innerHeight + window.scrollY >= document.body.offsetHeight - 5) {
+    document.querySelector(`#section-nav .nav-link[href="#contact"]`)?.classList.add("active");
   }
 });
+
 
 

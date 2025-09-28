@@ -36,10 +36,22 @@ main {
   font-size: 0.9rem;
 }
 
-#section-nav .nav-link {
-    cursor: pointer;
-}
 	
+	
+#section-nav .nav-link {
+  color: #000 !important;  /* default link color - black */
+  transition: color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+#section-nav .nav-link.active {
+  color: #6c757d !important; /* Bootstrap gray */
+  font-weight: 600;
+  background: #f1f1f1 !important; /* light gray background */
+  border-radius: 8px;
+}
+
+
 /* Hero description max-width */
 .hero-description {
     max-width: 600px;
@@ -202,5 +214,21 @@ main {
 .location-link:hover {
   color: #ff0000 !important; /* force red on hover */
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #section-nav ul {
+    display: flex;
+    flex-wrap: nowrap; /* prevent wrapping to next line */
+    overflow-x: auto; /* allow horizontal scrolling if too many items */
+    padding: 6px 12px;
+    white-space: nowrap;
+    scrollbar-width: none; /* hide scrollbar (Firefox) */
+  }
+
+  #section-nav .nav-link {
+    padding: 4px 8px !important;
+    font-size: 0.85rem; /* smaller font on mobile */
+  }
 }
 
