@@ -1,7 +1,7 @@
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
 var typed = new Typed('#typed', {
-    strings: ["Software Engineering...", "Machine Learning..."],
+    strings: ["AI Automation...", "Full Stack Engineering...", "Identity Governance..."],
     typeSpeed : 100,
     backSpeed:30,
     backDelay: 1200,

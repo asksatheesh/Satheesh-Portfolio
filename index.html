@@ -7,6 +7,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
       <link rel="stylesheet" href="css/styles.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
    </head>
    <body>
       <!-- Navbar -->
@@ -30,25 +32,40 @@
                   <p class="text-center mb-3 hero-description">
                      I craft end-to-end solutions with 12.5+ years of experience building scalable applications and implementing AI automation solutions.
                   </p>
-                  <div class="mb-3 text-center">
-                     <span class="badge me-2 px-3 py-2 fw-normal" style="background-color: #dbeafe; color: #1e40af; border: none;">.NET, Java, Python</span>
-                     <span class="badge me-2 px-3 py-2 fw-normal" style="background-color: #e9d5ff; color: #7c3aed; border: none;">Azure, AWS</span>
-                     <span class="badge me-2 px-3 py-2 fw-normal" style="background-color: #dcfce7; color: #16a34a; border: none;">IAM</span>
-                     <span class="badge me-2 px-3 py-2 fw-normal" style="background-color: #FFE5B4; color: #FF6600	; border: none;">Rest API</span>
-                     <span class="badge me-2 px-3 py-2 fw-normal" style="background-color: #dbeafe; color: #1e40af; border: none;">N8N Automation</span>
-                     <span class="badge me-2 px-3 py-2 fw-normal" style="background-color: #e9d5ff; color: #7c3aed; border: none;">LLM Integration</span>
-                  </div>
+				  <div class="mb-3 d-flex flex-wrap justify-content-center gap-2">
+				   <span class="badge px-3 py-2 fw-normal" style="background-color: #dbeafe; color: #1e40af;">.NET, Java, Python</span>
+				   <span class="badge px-3 py-2 fw-normal" style="background-color: #e9d5ff; color: #7c3aed;">Azure, AWS</span>
+				   <span class="badge px-3 py-2 fw-normal" style="background-color: #dcfce7; color: #16a34a;">IAM</span>
+				   <span class="badge px-3 py-2 fw-normal" style="background-color: #FFE5B4; color: #FF6600;">Rest API</span>
+				   <span class="badge px-3 py-2 fw-normal" style="background-color: #dbeafe; color: #1e40af;">N8N Automation</span>
+				   <span class="badge px-3 py-2 fw-normal" style="background-color: #e9d5ff; color: #7c3aed;">LLM Integration</span>
+				  </div>
 				  
+				  <div class="d-flex justify-content-center gap-2 mb-4">
+                  <a href="https://www.linkedin.com/in/at-satheeshkumar/" target="_blank" class="social-link linkedin">
+                  <i class="bi bi-linkedin fs-4"></i>
+                  </a>
+                  <a href="mailto:atsatheeshece@gmail.com" class="social-link gmail">
+                  <i class="bi bi-envelope fs-4"></i>
+                  </a>
+                  <a href="https://wa.me/+6593974966" target="_blank" class="social-link whatsapp">
+                  <i class="bi bi-whatsapp fs-4"></i>
+                  </a>
+                  <a href="https://github.com/asksatheesh" target="_blank" class="social-link github">
+                  <i class="bi bi-github fs-4"></i>
+                  </a>
+               </div>
+			   
 				  <p>Keen Interest in <span id="typed" style="color: #708dc6;"></span></p>
                </div>
             </section>	
 			
 			<!-- Technical Skills / Projects Section -->
-            <section id="techSkill" class="container my-4">
+            <section id="techSkill" class="container my-4" data-aos="fade-right">
 				<h3 class="mb-3">Technical Skills</h3>
 				<div class="row g-4">
 					<div class="col-md-4">
-						<div class="card shadow-sm rounded-4 h-100">
+						<div class="card shadow-sm rounded-4 h-100 hover-card">
 							<div class="card-body">
 								<h5 class="card-title text-primary">Programming &amp; Web</h5>
 								<ul class="list-unstyled">
@@ -61,26 +78,26 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="card shadow-sm rounded-4 h-100">
+						<div class="card shadow-sm rounded-4 h-100 hover-card">
 							<div class="card-body">
 								<h5 class="card-title text-success">Databases, Cloud &amp; IAM</h5>
 								<ul class="list-unstyled">
 									<li class="mb-2 small"><i class="bi bi-circle-fill text-success me-2 bullet-icon-size"></i>SQL Server, MongoDB, PostgreSQL, Airtable</li>
 									<li class="mb-2 small"><i class="bi bi-circle-fill text-success me-2 bullet-icon-size"></i>Microsoft Azure, AWS, Google Cloud</li>
 									<li class="mb-2 small"><i class="bi bi-circle-fill text-success me-2 bullet-icon-size"></i>Azure DevOps, CI/CD, Docker, Kubernetes</li>
-									<li class="mb-2 small"><i class="bi bi-circle-fill text-success me-2 bullet-icon-size"></i>OIM 11g R2, DI-IGA V4 &amp; V5, SailPoint IIQ&amp; ISC</li>
+									<li class="mb-2 small"><i class="bi bi-circle-fill text-success me-2 bullet-icon-size"></i>OIM 11g R2, DI-IGA, SailPoint IIQ&amp; ISC, Saviynt</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="card shadow-sm rounded-4 h-100">
+						<div class="card shadow-sm rounded-4 h-100 hover-card">
 							<div class="card-body">
 								<h5 class="card-title text-info">AI &amp; Automation</h5>
 								<ul class="list-unstyled">
 									<li class="mb-2 small"><i class="bi bi-circle-fill text-info me-2 bullet-icon-size"></i>OpenAI GPT-4/3.5, Google Gemini</li>
 									<li class="mb-2 small"><i class="bi bi-circle-fill text-info me-2 bullet-icon-size"></i>Azure OpenAI, Claude, LangChain</li>
-									<li class="mb-2 small"><i class="bi bi-circle-fill text-info me-2 bullet-icon-size"></i>Pinecone, Vector Search, RAG Systems</li>
+									<li class="mb-2 small"><i class="bi bi-circle-fill text-info me-2 bullet-icon-size"></i>UiPath, Pinecone, Vector Search, RAG Systems</li>
 									<li class="mb-2 small"><i class="bi bi-circle-fill text-info me-2 bullet-icon-size"></i>N8N Automation, Workflow Orchestration</li>
 								</ul>
 							</div>
@@ -153,28 +170,28 @@
 											<!-- Provisioning Flow -->
 											<div class="mb-4">
 												<h6 class="text-primary fw-bold mb-2">Provisioning Flow</h6>
-												<div class="d-flex flex-column align-items-center">
-													<div class="bg-primary bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+												<div class="d-flex flex-column align-items-center" data-aos="fade-up">
+													<div class="bg-primary bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>User Request</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-success bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-success bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Access Request</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-info bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-info bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Policy & Role Check</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-warning bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-warning bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Account Creation/Update/Delete</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-secondary bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-secondary bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Workflow Approval</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-secondary bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-secondary bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Target System</small>
 													</div>
 												</div>
@@ -183,24 +200,24 @@
 											<!-- Reconciliation Flow -->
 											<div>
 												<h6 class="text-success fw-bold mb-2">Reconciliation Flow</h6>
-												<div class="d-flex flex-column align-items-center">
-													<div class="bg-primary bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+												<div class="d-flex flex-column align-items-center" data-aos="fade-up">
+													<div class="bg-primary bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Target System → eg., Active Directory</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-success bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-success bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Reconciliation Task</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-info bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-info bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Account Status Verification</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-warning bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-warning bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>IdentityIQ Database</small>
 													</div>
-													<i class="bi bi-arrow-down text-muted mb-1"></i>
-													<div class="bg-secondary bg-opacity-25 rounded p-2 mb-1 provisioning-box">
+													<i class="bi bi-arrow-down text-muted mb-1" data-aos="fade-up"></i>
+													<div class="bg-secondary bg-opacity-25 rounded p-2 mb-1 provisioning-box hover-card" data-aos="fade-up">
 														<small>Audit & Reporting</small>
 													</div>
 												</div>
@@ -220,7 +237,7 @@
                <h3 class="mb-3">Work Experience</h3>
                <div class="row">
                   <div class="col-12">
-                     <div class="card shadow-sm rounded-4 mb-3">
+                     <div class="card shadow-sm rounded-4 mb-3 hover-card" data-aos="fade-up">
                         <div class="card-body">
                            <div class="d-flex justify-content-between align-items-start mb-2">
                               <h5 class="card-title mb-0">Senior Consultant</h5>
@@ -234,7 +251,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="card shadow-sm rounded-4 mb-3">
+                     <div class="card shadow-sm rounded-4 mb-3 hover-card" data-aos="fade-up">
                         <div class="card-body">
                            <div class="d-flex justify-content-between align-items-start mb-2">
                               <h5 class="card-title mb-0">Senior Software Consultant</h5>
@@ -247,7 +264,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="card shadow-sm rounded-4 mb-3">
+                     <div class="card shadow-sm rounded-4 mb-3 hover-card" data-aos="fade-up">
                         <div class="card-body">
                            <div class="d-flex justify-content-between align-items-start mb-2">
                               <h5 class="card-title mb-0">Senior Software Development Engineer</h5>
@@ -263,7 +280,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="card shadow-sm rounded-4 mb-3">
+                     <div class="card shadow-sm rounded-4 mb-3 hover-card" data-aos="fade-up">
                         <div class="card-body">
                            <div class="d-flex justify-content-between align-items-start mb-2">
                               <h5 class="card-title mb-0">Software Developer</h5>
@@ -277,7 +294,7 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="card shadow-sm rounded-4 mb-3">
+                     <div class="card shadow-sm rounded-4 mb-3 hover-card" data-aos="fade-up">
                         <div class="card-body">
                            <div class="d-flex justify-content-between align-items-start mb-2">
                               <h5 class="card-title mb-0">Software Engineer</h5>
@@ -299,32 +316,32 @@
             <section id="how-can-i-help" class="container my-3">
                <h3 class="mb-3">How Can I Help?</h3>
                <div class="row g-4">
-                  <div class="col-md-3 col-6">
-                     <div class="card text-center shadow-sm rounded-4 p-3">
+                  <div class="col-md-3 col-6" data-aos="fade-left">
+                     <div class="card text-center shadow-sm rounded-4 p-3 hover-card">
                         <div class="mb-2"><i class="bi bi-code-slash fs-2"></i></div>
                         <div>Full Stack Development</div>
                      </div>
                   </div>
-                  <div class="col-md-3 col-6">
-                     <div class="card text-center shadow-sm rounded-4 p-3">
+                  <div class="col-md-3 col-6" data-aos="fade-left">
+                     <div class="card text-center shadow-sm rounded-4 p-3 hover-card">
                         <div class="mb-2"><i class="bi bi-cloud-arrow-up fs-2"></i></div>
                         <div>Cloud Solutions</div>
                      </div>
                   </div>
-                  <div class="col-md-3 col-6">
-                     <div class="card text-center shadow-sm rounded-4 p-3">
+                  <div class="col-md-3 col-6" data-aos="fade-left">
+                     <div class="card text-center shadow-sm rounded-4 p-3 hover-card">
                         <div class="mb-2"><i class="bi bi-robot fs-2"></i></div>
                         <div>AI Automation</div>
                      </div>
                   </div>
-                  <div class="col-md-3 col-6">
-                     <div class="card text-center shadow-sm rounded-4 p-3">
+                  <div class="col-md-3 col-6" data-aos="fade-left">
+                     <div class="card text-center shadow-sm rounded-4 p-3 hover-card">
                         <div class="mb-2"><i class="bi bi-people fs-2"></i></div>
                         <div>Team Leadership</div>
                      </div>
                   </div>
-				  <div class="col-md-3 col-6">
-                     <div class="card text-center shadow-sm rounded-4 p-3">
+				  <div class="col-md-3 col-6" data-aos="fade-left">
+                     <div class="card text-center shadow-sm rounded-4 p-3 hover-card">
                         <div class="mb-2"><i class="bi bi-person-lock fs-2"></i></div>
                         <div>Digital Identity and Access Management (IAM)</div>
                      </div>
@@ -335,25 +352,80 @@
 			<!-- Technology Familer With -->
             <section id="tech-stack" class="container my-5">
                <h3 class="mb-3">Tech Stack</h3>
-				 <div class="card shadow-sm rounded-4 mb-3">
-					<div class="card-body text-center">
-					  <div class="d-flex flex-wrap justify-content-center gap-3">
-						<img src="images/html5.png" alt="HTML" width="65" title="HTML">
-						<img src="images/css3.png" alt="CSS" width="65" title="CSS">					  
-						<img src="images/js.png" alt="JavaScript" width="60" title="JavaScript">		
-						<img src="images/python.png" alt="Python" width="60" title="Python">
-						<img src="images/c-sharp.png" alt="C#" width="70" title="C#">
-						<img src="images/java.png" alt="Java" width="70" title="Java">
-						<img src="images/angular.png" alt="angular" width="65" title="Angular">
-						<img src="images/jQuery.png" alt="jQuery" width="70" title="jQuery">
-						<img src="images/api.png" alt="API" width="70" title="API">
-						<img src="images/sql.png" alt="sql" width="60" title="SQL">						
-						<img src="images/vs.png" alt="vs" width="70" title="VisualStudio">
-						<img src="images/ps.png" alt="ps" width="65" title="Photoshop">
-						<img src="images/sailpoint.png" alt="sailpoint" width="85" title="SailPoint">
-						
+				 <div class="card shadow-sm rounded-4 mb-3 hover-card">
+					<div class="card-body text-center" data-aos="fade-up">
+						<ul  class="d-flex flex-wrap justify-content-center gap-3 p-0 m-0 list-unstyled skill-icon-row">
+							<li>
+							  <iconify-icon icon="logos:html-5" width="40" height="30" title="HTML"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:css-3" width="40" height="30" title="CSS"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:javascript" width="40" height="30" title="JavaScript"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:python" width="40" height="30" title="Python"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:c-sharp" width="40" height="30" title="C#"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:java" width="40" height="30" title="Java"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:angular-icon" width="40" height="30" title="Angular"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="devicon:jquery" width="40" height="30" title="jQuery"></iconify-icon>
+							</li>
+							<li>
+							<img src="images/api.png" width="40" height="40" title="API"/></li>
+							<!--li>
+							  <iconify-icon icon="streamline-ultimate:coding-apps-website-web-dev-api-cloud-bold" width="40" height="30" title="API"></iconify-icon>
+							</li!-->
+							<li>
+							  <iconify-icon icon="vscode-icons:file-type-sql" width="40" height="30" title="SQL"></iconify-icon>
+							</li>
+							<li>
+							  <iconify-icon icon="logos:visual-studio" width="40" height="30" title="Visual Studio"></iconify-icon>
+							</li>
+							<li><iconify-icon icon="simple-icons:uipath" width="40" height="30" title="UiPath"></iconify-icon></li>
 
-					  </div>
+						  <li>
+							<iconify-icon icon="logos:google-cloud" width="40" height="30" title="Google Cloud"></iconify-icon>
+						  </li>
+
+						  <li>
+							<iconify-icon icon="logos:aws" width="40" height="30" title="AWS"></iconify-icon>
+						  </li>
+
+						  <li>
+							<iconify-icon icon="logos:microsoft-azure" width="40" height="30" title="Azure"></iconify-icon>
+						  </li>
+
+						  <li>
+							<iconify-icon icon="logos:postgresql" width="40" height="30" title="PostgreSQL"></iconify-icon>
+						  </li>
+
+						  <li>
+							<iconify-icon icon="logos:mongodb-icon" width="40" height="30" title="MongoDB"></iconify-icon>
+						  </li>
+
+						  <li>
+							<iconify-icon icon="logos:docker-icon" width="40" height="30"  title="Docker"></iconify-icon>
+						  </li>
+
+						  <li>
+							<iconify-icon icon="logos:kubernetes" width="40" height="30" title="Kubernetes"></iconify-icon>
+						  </li>
+					<li>
+							  <iconify-icon icon="logos:adobe-photoshop" width="40" height="30" title="Photoshop"></iconify-icon>
+							</li>
+							<li>
+							<img src="images/sailpoint.png" width="40" height="40" title="SailPoint"/></li>
+						
+						</ul>
 					</div>
                </div>
             </section>
@@ -408,7 +480,14 @@
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script> AOS.init({
+    duration: 1000 // animation duration in ms
+  }); </script>
+
 	  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-	  <script src="js/typed.js"></script>  	  
+	  <script src="js/typed.js"></script>  
+ 
    </body>
 </html>
